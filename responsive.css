@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+    .wrapper {
+        padding: 0 15%;
+    }
+
+    .container {
+        grid-template-areas:
+            "Amount Compile"
+            "Tips Compile"
+            "People Compile"
+        ;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px;
+        gap: 40px;
+    }
+
+    .container-amount_show {
+        padding: 60px 40px 40px;
+        gap: 40px;
+    }
+
+    .button-reset {
+        padding: 15px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}

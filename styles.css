@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+/* Colores */
+:root {
+    /* COLORES PRIMARIOS */
+    --strongCyan: hsl(172, 67%, 45%);
+    /* COLORES NEUTRALES */
+    --veryDarkCyan: hsl(183, 100%, 15%);
+    --darkGrayishCyan: hsl(186, 14%, 43%);
+    --grayishCyan: hsl(184, 14%, 56%);
+    --lightGrayishCyan: hsl(185, 41%, 84%);
+    --veryLightGrayishCyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(236, 100%, 87%);
+    --disabled: hsl(183, 79%, 24%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input.input-number {
+    min-width: 80%;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    text-align: end;
+    background: none;
+    color: var(--veryDarkCyan);
+    font-weight: bold;
+}
+
+.container-input_number {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: hsl(202, 50%, 97%);
+    padding: 10px;
+    align-items: center;
+}
+
+.container-input_number.error {
+    border: 1px solid red;
+}
+
+.container-input_number:focus-within {
+    outline: solid hsl(172, 35%, 47%);
+}
+
+h3 {
+    font-size: 16px;
+    color: var(--darkGrayishCyan);
+    font-weight: lighter;
+    letter-spacing: 0px;
+}
+
+body {
+    background-color: var(--lightGrayishCyan);
+    font-family: 'Space Mono', monospace;
+}
+
+/* ----------------------------- */
+.header {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-self: start;
+}
+
+.header>h1 {
+    max-width: 115px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-align: center;
+    color: var(--veryDarkCyan);
+    word-wrap: break-word;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "Amount"
+        "Tips"
+        "People"
+        "Compile"
+    ;
+    gap: 25px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.input.amount {
+    grid-area: Amount;
+}
+
+.containerTip {
+    grid-area: Tips;
+}
+
+.input.people {
+    grid-area: People;
+}
+
+.container-amount_show {
+    grid-area: Compile;
+}
+
+/* CONTAIER AMOUNT */
+.container-labels {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+}
+
+.container-labels>p {
+    color: red;
+}
+
+.container-amount_show {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: max-content max-content 1fr;
+    gap: 15px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.container-button_tip {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.container-button_tip>button,
+#buttonCustom {
+    width: 100%;
+    height: 50px;
+    background-color: var(--veryDarkCyan);
+    color: var(--white);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    cursor: pointer;
+}
+
+#buttonCustom {
+    background-color: hsl(202, 50%, 97%);
+    color: var(--veryDarkCyan);
+}
+
+.container-button_tip>button:focus,
+#buttonCustom:focus {
+    background-color: var(--strongCyan);
+    color: var(--veryDarkCyan);
+}
+
+.content-show_tip,
+.content-show_total {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+
+.container-amount_show p.text-tip {
+    color: var(--white);
+}
+
+p.text-tip>span {
+    color: gray;
+    word-wrap: break-word;
+    display: block;
+    font-size: 12px;
+}
+
+.container-show {
+    justify-self: end;
+    align-self: center;
+
+}
+
+img {
+    color: var(--strongCyan)
+}
+
+.container-show>p {
+    color: var(--strongCyan);
+    font-size: 24px;
+}
+
+.button-reset {
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: var(--strongCyan);
+    outline: none;
+    border: none;
+    color: var(--veryDarkCyan);
+    font-weight: bold;
+    border-radius: 5px;
+    height: max-content;
+    align-self: flex-end;
+}
+
+.button-reset.disabled {
+    background-color: var(--disabled);
+}
+
+/* FOOTER */
+.attribution {
+    background-color: var(--Pale-blue);
+    height: 80px;
+    align-self: flex-end;
+    padding: 20px;
+    text-align: center;
+}
+
+.attribution>a {
+    text-decoration: none;
+    color: var(--veryDarkCyan);
+    font-weight: bold;
+}
