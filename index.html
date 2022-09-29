@@ -1,101 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor | Tip calculator app</title>
+    <title>Frontend Mentor | Tip calculator app</title>
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./responsive.css">
-</head>
+  </head>
 
-<body>
-  <header class="header">
-    <h1>SPLITTER</h1>
-  </header>
+  <body>
+    <header class="header">
+      <h1>SPLITTER</h1>
+    </header>
 
-  <main class="hero">
-    <section class="section">
-      <div class="wrapper">
-        <div class="container">
-          <div class="input amount">
-            <div class="container-labels">
-              <h3 class="title-amount">Bill</h3>
-              <p></p>
-            </div>
-            <div class="container-input_number">
-              <img src="./images/icon-dollar.svg" alt="Icon Dollar">
-              <input id="amountBill" class="input-number" value="1" placeholder="0" id="amount" type="number">
-            </div>
-          </div>
-
-          <div class="containerTip">
-            <h3>Select Tip %</h3>
-            <div class="container-button_tip">
-              <button type="button" value="5">5%</button>
-              <button type="button" value="10">10%</button>
-              <button type=" button" value="15">15%</button>
-              <button type="button" value="25">25%</button>
-              <button type="button" value="50">50%</button>
-              <input id="buttonCustom" type="number" placeholder="Custom">
-            </div>
-          </div>
-
-          <div class="input people">
-            <div class="container-labels">
-              <h3>Number of People</h3>
-              <p></p>
-            </div>
-            <div class="container-input_number">
-              <img src="./images/icon-person.svg" alt="Icon Person">
-              <input id="numberPeople" class="input-number" value="1" placeholder="0" type="number" name="number-people"
-                id="people">
-            </div>
-          </div>
-
-          <div class="container-amount_show">
-            <div class="content-show_tip">
-              <p class="text-tip">Tip Amount
-                <span>/ person</span>
-              </p>
-              <div class="container-show">
-                <p>
-                  $<span id="contentAmountTip">0.00</span>
-                </p>
+    <main class="hero">
+      <section class="section">
+        <div class="wrapper">
+          <div class="container">
+            <div class="input amount">
+              <div class="container-labels">
+                <h3 class="title-amount">Bill</h3>
+                <p></p>
+              </div>
+              <div class="container-input_number">
+                <img src="./images/icon-dollar.svg" alt="Icon Dollar" />
+                <input
+                  tabindex="1"
+                  id="amountBill"
+                  class="input-number"
+                  value="1"
+                  placeholder="0"
+                  id="amount"
+                  type="number"
+                />
               </div>
             </div>
 
-            <div class="content-show_total">
+            <div class="containerTip">
+              <h3>Select Tip %</h3>
+              <div class="container-button_tip">
+                <button type="button" value="5">5%</button>
+                <button type="button" value="10">10%</button>
+                <button type=" button" value="15">15%</button>
+                <button type="button" value="25">25%</button>
+                <button type="button" value="50">50%</button>
+              <input id="buttonCustom" type="number" placeholder="Custom">
+              </div>
+            </div>
+
+            <div class="input people">
+              <div class="container-labels">
+                <h3>Number of People</h3>
+                <p></p>
+              </div>
+              <div class="container-input_number">
+                <img src="./images/icon-person.svg" alt="Icon Person" />
+                <input
+                  class="input-number"
+                  value="1"
+                  placeholder="0"
+                  type="number"
+                  name="number-people"
+                  id="people"
+                  tabindex="2"
+                />
+              </div>
+            </div>
+
+            <div class="container-amount_show">
+              <div class="content-show_tip">
+              <p class="text-tip">Tip Amount
+                  <span>/ person</span>
+                </p>
+                <div class="container-show">
+                <p>
+                  $<span id="contentAmountTip">0.00</span>
+                </p>
+                </div>
+              </div>
+
+              <div class="content-show_total">
               <p class="text-tip">Total
-                <span>/ person</span>
-              </p>
-              <div class="container-show">
+                  <span>/ person</span>
+                </p>
+                <div class="container-show">
 
                 <p>
                   $<span id="showTotalAmountPeople">0.00</span>
                 </p>
+                </div>
               </div>
-            </div>
             <button type="button" class="button-reset disabled" type="button" disabled="true">Reset</button>
 
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="attribution">
+    <footer class="attribution">
 
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/DmiteZ" target="_blank">David Mite Z</a>.
 
-  </footer>
+    </footer>
 
-  <script src="./main.js"></script>
-</body>
+    <script src="./main.js"></script>
+  </body>
 
 </html>

@@ -1,6 +1,6 @@
 //Inputs de la data a tomar del usuario
 const $inputBill = document.querySelector("#amountBill");
-const $inputPeople = document.querySelector("#numberPeople");
+const $inputPeople = document.querySelector("#people");
 
 const $buttonReset = document.querySelector(".button-reset");
 const $tipAmount = document.getElementById("contentAmountTip");
