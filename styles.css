@@ -60,6 +60,8 @@ h3 {
 body {
     background-color: var(--lightGrayishCyan);
     font-family: 'Space Mono', monospace;
+    height: 100vh;
+    display: grid;
 }
 
 /* ----------------------------- */
@@ -223,7 +225,7 @@ img {
 /* FOOTER */
 .attribution {
     background-color: var(--Pale-blue);
-    height: 80px;
+    height: max-content;
     align-self: flex-end;
     padding: 20px;
     text-align: center;
